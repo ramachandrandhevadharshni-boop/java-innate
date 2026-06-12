@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class AmazonApp {
+    public static void main(String[] args) {
+
+        HashMap<String, ArrayList<String>> mobiles = new HashMap<>();
+
+        ArrayList<String> iphoneVersions = new ArrayList<>();
+        iphoneVersions.add("iPhone 13 Pro");
+        iphoneVersions.add("iPhone 14 Pro");
+        iphoneVersions.add("iPhone 15 Pro");
+        iphoneVersions.add("iPhone 17 Pro");
+
+        mobiles.put("iPhone", iphoneVersions);
+
+        System.out.println("Brand: iPhone");
+        System.out.println("Versions: " + mobiles.get("iPhone"));
+    }
+}
